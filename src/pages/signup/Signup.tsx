@@ -1,6 +1,7 @@
 import React, {ChangeEvent, FormEvent, useState} from "react";
 import {signUp} from "../../api/auth.service";
 import useAuth from "../../data/AuthContext";
+import {useHistory} from "react-router-dom";
 
 
 export const Signup = () => {
@@ -12,6 +13,7 @@ export const Signup = () => {
     const [loading, setLoading] = useState(false);
 
     const {loginUser} = useAuth();
+    const history = useHistory();
 
     const handleFormChange = (event: ChangeEvent<HTMLInputElement>) => {
         const {name, value} = event.target;
@@ -31,6 +33,7 @@ export const Signup = () => {
                     console.log(resp)
                     loginUser(resp.token);
                     setLoading(false);
+                    history.push('/')
                 })
         } else {
             setLoading(false);
