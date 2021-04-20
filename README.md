@@ -1,6 +1,16 @@
+### Demo
+
+A sample demo can be seen at https://ntt-assignment.herokuapp.com/
+
 ### Config
 
-update `config/config.ts` if api path changes.
+If api url changes, please update `config/config.ts`
+
+### Server
+
+Can be found at https://github.com/zh-er/form-system-nodejs
+
+---
 
 # Getting Started with Create React App
 
