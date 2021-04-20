@@ -2,13 +2,19 @@
 
 A sample demo can be seen at https://ntt-assignment.herokuapp.com/
 
-### Config
-
-If api url changes, please update `config/config.ts`
-
 ### Server
 
 Can be found at https://github.com/zh-er/form-system-nodejs
+
+#### Admin Credentials:
+
+Email: admin@test.com
+
+Password: 123456
+
+### Config
+
+If api url changes, please update `config/config.ts`
 
 ---
 
